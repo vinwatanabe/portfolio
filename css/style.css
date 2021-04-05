@@ -269,6 +269,7 @@ nav #menu {
 .project_name_project {
 	font-size: 8.125em;
 	font-weight: 900;
+	text-transform: uppercase;
 	padding: 5px 0 5px 0;
 }
 
@@ -294,18 +295,50 @@ nav #menu {
 }
 
 .text_block p {
-	padding: 40px 0 40px 0;
+	padding: 50px 0 50px 0;
 }
 
 .text_block p:first-child {
-	margin-top: 250px;
-	padding: 0 0 40px 0;
+	margin-top: 230px;
+	padding: 0 0 50px 0;
+}
+
+.text_block_full {
+	font-family: 'Roboto';
+	font-size: 1.125em;
+	line-height: 1.5625em;
+	padding: 50px 17% 50px 17%;
+}
+
+.text_block_side {
+	position: relative;
+	font-family: 'Roboto';
+	font-size: 1.125em;
+	line-height: 1.5625em;
+	padding: 0 0 0 17%;
+	margin: 50px 0 50px 0;
+	overflow: auto;
+}
+
+.text_side {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40%;
+	display: inline-block;
+}
+
+.text_title {
+	font-size: 1.5em;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-bottom: 15px;
 }
 
 .video {
 	position: relative;
 	display: inline-block;
-	padding: 40px 0;
+	padding: 50px 0;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 960px;
@@ -314,10 +347,22 @@ nav #menu {
 
 .image_G {
 	width: 100%;
-	padding: 40px 0 40px 0;
+	padding: 50px 0 50px 0;
 }
 
 .image_G img {
+	width: 100%;
+	height: auto;
+}
+
+.image_S {
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	float: right;
+}
+
+.image_S img {
 	width: 100%;
 	height: auto;
 }
@@ -328,7 +373,7 @@ nav #menu {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	padding: 40px 0 40px 0;
+	padding: 50px 0 50px 0;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 74%;
@@ -341,11 +386,17 @@ nav #menu {
 	margin: 0.625em;
 }
 
+.credits {
+	padding: 50px 0 100px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
 .team {
 	font-family: 'Roboto';
 	font-size: 1.125em;
-	text-align: center;
-	padding: 40px 0 40px 0;
+	padding: 0 50px 0 50px;
 }
 
 .team p {
