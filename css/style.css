@@ -328,6 +328,11 @@ nav #menu {
 	display: inline-block;
 }
 
+.styled_side_block {
+	padding: 100px 0 100px 17%;
+	margin: 0;
+}
+
 .text_title {
 	font-size: 1.5em;
 	font-weight: 900;
@@ -654,6 +659,29 @@ nav #menu {
 		margin-top: 160px;
 	}
 
+	.text_block_side {
+		padding: 0 17% 0 17%;
+	}
+
+	.text_side {
+		position: relative;
+		top: 0;
+		transform: none;
+		width: auto;
+		display: inherit;
+	}
+
+	.styled_side_block {
+		padding: 100px 17% 100px 17%;
+	}
+
+	.image_S {
+		width: 100%;
+		display: inherit;
+		float: none;
+		margin-top: 30px;
+	}
+
 	.video {
 		width: 550px;
 		height: 309px;
@@ -670,6 +698,19 @@ nav #menu {
 
 	.about_me_title {
 		font-size: 3.5em;
+	}
+
+	.credits {
+		padding: 50px 17% 100px 17%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+	}
+
+	.team {
+		font-family: 'Roboto';
+		font-size: 1.125em;
+		padding: 20px 0 20px 0;
 	}
 }
 
@@ -779,10 +820,6 @@ nav #menu {
 
 	.project_name_project {
 		font-size: 32px;
-	}
-
-	.text_block {
-		text-align: center;
 	}
 
 	.text_block p:first-child {
