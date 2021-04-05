@@ -130,8 +130,8 @@ $(document).ready(function () {
 				timer = setInterval(timerFunc, timeChange);
 			} else {
 				removeActive();
-				clearInterval(timer);
 				currentSlide--;
+				clearInterval(timer);
 				slideNumber = '0' + String(currentSlide);
 				slideAnimation(slideNumber);
 				timer = setInterval(timerFunc, timeChange);
@@ -146,6 +146,8 @@ $(document).ready(function () {
 
 			$(window).off('mousewheel');
 			setTimeout(changeScroll, 2000);
+			clearInterval(timer);
+			timer = setInterval(timerFunc, timeChange);
 		});
 	}
 });
